@@ -75,11 +75,10 @@ function Expe(){
                 </div>
 
 
-                <div className=" ">
+                <div className=" w-full grid grid-col-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-8">
                   
-                {/* "shadow-md hover:scale-105 duration-500 py-2 rounded-lg" */}
                 {techs.map(((skill)=>(
-                    <div key={skill.id} className={`w-full grid grid-col-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-8 ${skill.style}`}>
+                    <div key={skill.id} className={` shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${skill.style}`}>
                         <img src = {skill.src} alt="" className="w-20 mx-auto" />
                         <p className="mt-4"> {skill.title} </p>
                     </div>
